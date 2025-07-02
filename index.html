@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Inventory Management System</h1>
+    
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>This Python project uses <strong>tkinter</strong> for GUI and demonstrates file handling, database operations, and interactive design.</p>
+    </section>
+
+    <section>
+  <h2>Scripts & Their Functions</h2>
+
+  <div class="card">
+    <h3>1. <code>dashboard.py</code></h3>
+    <p>Main dashboard of the system. Contains buttons, labels, images, and live updates.</p>
+    <p>Enables navigation to <code>employee</code>, <code>supplier</code>, <code>category</code>, <code>products</code>, and <code>sales</code> modules for CRUD operations.</p>
+  </div>
+
+  <div class="card">
+    <h3>2. <code>employee.py</code></h3>
+    <p>Handles employee information management. Features include adding, editing, deleting, and searching employees by <code>email</code>, <code>name</code>, or <code>contact</code>.</p>
+  </div>
+
+  <div class="card">
+    <h3>3. <code>supplier.py</code></h3>
+    <p>Manages supplier records. Allows CRUD operations and searching by <code>invoice number</code>.</p>
+  </div>
+
+  <div class="card">
+    <h3>4. <code>product.py</code></h3>
+    <p>Tracks product information, availability, and supports search by <code>category</code>, <code>supplier</code>, or <code>product name</code>.</p>
+  </div>
+
+  <div class="card">
+    <h3>5. <code>category.py</code></h3>
+    <p>Defines product categories. Allows users to <code>add</code> or <code>delete</code> categories (e.g., <code>IPhone → Phone</code>).</p>
+  </div>
+
+  <div class="card">
+    <h3>6. <code>sales.py</code></h3>
+    <p>Displays and stores sales data linked to <code>invoice numbers</code>. Useful for billing history tracking.</p>
+  </div>
+
+  <div class="card">
+    <h3>7. <code>create_db.py</code></h3>
+    <p>Initializes the SQLite database. Must be run before launching <code>dashboard.py</code> to avoid errors.</p>
+  </div>
+
+  <div class="card">
+    <h3>8. <code>billing.py</code></h3>
+    <p>Handles billing operations, customer details, selected products, pricing, and discounts.</p>
+    <p>Includes a <code>calculator</code> to compute the total bill. All buttons and interactions are functionalized.</p>
+  </div>
+</section>
+<section>
+      <h2>Usage Steps</h2>
+      <ol>
+        <li>Run <code>create_db.py</code> to initialize the database.</li>
+        <li>Run <code>dashboard.py</code> to launch the main interface.</li>
+        <li>Use the menu to manage employees, suppliers, products, and billing.</li>
+        <li>Use <code>sales.py</code> to view saved bills.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Pre-Requisites</h2>
+      <ul>
+        <li><code>pip install time</code></li>
+        <li><code>pip install pil</code></li>
+        <li><code>pip install sqlite3</code></li>
+        <li><code>pip install os</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Configuration</h2>
+      <ul>
+        <li>Create a folder named <code>images</code> to store images used in the app.</li>
+        <li>Create a folder named <code>bill</code> to store generated bills.</li>
+        <li>Run the Python scripts in the correct sequence for proper functioning.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aman Nath Jha | Inventory Management System</p>
+  </footer>
+</body>
+</html>
